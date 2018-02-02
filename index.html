@@ -1,0 +1,24 @@
+<html ng-app="myapp">
+    <head>
+        <title></title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body ng-controller="lessonCtrl">
+        <div>stuff</div>
+        <div>{{test}}</div>
+        
+        <ul  >
+        <lesson-hider lesson="lesson" ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+        <script src="./app.js"></script>
+        <script src="./lessonCtrl.js"></script>
+        <script src="./lessonHider.js"></script>
+        <script src="./lessonService.js"></script>
+
+    </body>
+
+</html>
